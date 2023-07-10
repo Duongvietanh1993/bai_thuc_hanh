@@ -1,0 +1,26 @@
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin: 20px 20px 0;
+}
+ul{
+    background-color: gray;
+    margin: 0 20px 0;
+    text-align: center;
+
+}
+li{
+    display: inline-block;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
