@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    class Mouse {
+        constructor(weight, speed) {
+            this.weight = weight;
+            this.speed = speed;
+            this.alive = true;
+        }
+    }
+
+    class Cat {
+        name;
+        weight;
+        speed;
+
+        constructor(name, weight, speed) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+        }
+
+        meow() {
+            console.log(`${this.name} meo meo`)
+        }
+
+        catchMouse(mouse) {
+            if (this.speed > mouse.speed) {
+                console.log(`${this.name} bắt chuột!`);
+                mouse.alive = false;
+            } else {
+                console.log(`${this.name} Không bắt được chuột...`);
+            }
+        }
+
+        eatMouse(mouse) {
+            if (mouse.alive) {
+                console.log(`${this.name} không thể ăn được chuột...`);
+            } else {
+                console.log(`${this.name} đã ăn được chuột!`);
+                this.weight += mouse.weight;
+            }
+        }
+    }
+
+    let cat1 = new Cat("tom", 5, 20);
+    let mouse1 = new Mouse(1, 10);
+
+    cat1.meow();
+    cat1.catchMouse(mouse1);
+    cat1.eatMouse(mouse1)
+    console.log(`${cat1.name}'s weight: ${cat1.weight}`);
+</script>
+</body>
+</html>
