@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    text-align: center;
+}
+
+table{
+
+    text-align: center;
+    border-collapse:collapse;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+tr,td,th{
+    border: 1px solid #1c1c1c;
+}
+table img{
+    width: 100px;
+}
+th{
+    background: #5b5b5b;
+    padding: 5px 20px;
+}
+tr,td{
+    background: #8c8c8c;
+}
+button{
+    padding: 5px 20px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
